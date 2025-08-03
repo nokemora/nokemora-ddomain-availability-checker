@@ -15,23 +15,18 @@ A Python script to check the availability of domain names in bulk using WHOIS an
 
 ---
 
-## Requirements
+ Requirements
 
 - Python 3.7+
 - `python-whois` library
 
 Install the required package:
 
-```bash
+`bash
 pip install python-whois
-Usage
-Prepare a text file with your list of domains (e.g., domains.txt), one per line.
 
-Run the script:
 
-bash
-Copy
-Edit
+ ## Usage ✅
 python domain_check.py --input domains.txt --output results
 After running, check the output files:
 
@@ -39,23 +34,18 @@ results_available.txt
 
 results_unavailable.txt
 
-Example domains.txt
-Copy
-Edit
-HoustonFitnessCoach.com
+## Example domains.txt
 ExampleSite.com
+
 MyTestDomain.org
-Notes
+## Notes
 The script uses WHOIS lookup first and then falls back to DNS resolution to determine availability.
 
 For large lists, adjust concurrency with the --workers option (default is 20):
-
-bash
-Copy
-Edit
 python domain_check.py --input domains.txt --output results --workers 10
-License
+## License
 This project is licensed under the MIT License.
 
-Author
-Your Name or GitHub Username
+
+## Author
+nokemora
